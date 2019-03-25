@@ -1,0 +1,55 @@
+{
+  "album_name": "photo-album",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress",
+    "start": "nodemon server.js",
+    "test": "mocha"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@angular/compiler-cli": "^7.2.9",
+    "@ngtools/webpack": "^7.3.6",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "copy-webpack-plugin": "^5.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mocha": "^6.0.2",
+    "nodemon": "^1.18.10",
+    "raw-loader": "^1.0.0",
+    "script-ext-html-webpack-plugin": "^2.1.3",
+    "typescript": "3.1.6",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "@angular/common": "^7.2.9",
+    "@angular/compiler": "^7.2.9",
+    "@angular/core": "^7.2.9",
+    "@angular/platform-browser": "^7.2.9",
+    "@angular/platform-browser-dynamic": "^7.2.9",
+    "@angular/router": "^7.2.10",
+    "app-root-path": "^2.1.0",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "fs-extra": "^7.0.1",
+    "list-directories": "^1.1.0",
+    "mongodb": "^3.2.2",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1",
+    "rxjs": "^6.4.0",
+    "rxjs-compat": "^6.4.0",
+    "winston": "^3.2.1",
+    "zone.js": "^0.8.29"
+  }
+}

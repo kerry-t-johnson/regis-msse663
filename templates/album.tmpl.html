@@ -1,0 +1,58 @@
+<div id="album-page">
+    <h4>There are {{images.length}} photos in the <em>{{album_name}}</em> album</h4>
+    <div class="row">
+        <a href="/">Back to album list</a>
+    </div>
+    <div id="photos">
+    {{#images}}
+        <div class="row">
+            <div class="col s6 m4">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">{{image_name}}</span>
+                        <img class="photo-image" src="{{image_url}}"/>
+                        <p>{{image_description}}</p>
+                    </div>
+                    <div class="card-action right-align">
+                        <a href="#" class="confirm-delete-image right-align" data-album="{{album_name}}" data-image="{{image_name}}"><i class="material-icons">delete</i></a>
+                    </div>
+                    <div class="modal" data-album="{{album_name}}" data-image="{{image_name}}">
+                        <div class="modal-content">
+                            <h5>Delete image?</h5>
+                            <p>Are you sure you want to delete '{{image_name}}' from {{album_name}}?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="modal-close btn-flat">Cancel</a>
+                            <a class="modal-close waves-effect waves-red btn-flat delete-image" data-album="{{album_name}}" data-image="{{image_name}}">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/images}}
+    </div>
+    <div style="clear: left;"/>
+</div>
+<div>
+    <a id="show-image-upload" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+</div>
+<div id="upload-image-modal" class="modal">
+    <div class="modal-content">
+        <h5>Upload image</h5>
+        <form id="image-upload-form">
+            <div class="file-field input-field">
+                <div class="btn">
+                    <span>File</span>
+                    <input type="file" name="image">
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" name="image-text">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-close btn-flat">Cancel</a>
+        <a id="submit-image" class="modal-close waves-effect waves-red btn-flat" data-album="{{album_name}}">Upload</a>
+    </div>
+</div>

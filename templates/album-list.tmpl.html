@@ -1,0 +1,15 @@
+<h2>Albums</h2>
+<div id="album-list">
+    {{#albums.length}}
+        <ul id="albums">
+            {{#albums}}
+                <li class="album">
+                    <a href="/album/{{name}}">{{name}}</a>
+                </li>
+            {{/albums}}
+        </ul>
+    {{/albums.length}}
+    {{^albums}}
+        No albums
+    {{/albums}}
+</div>
