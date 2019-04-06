@@ -3,3 +3,9 @@
     background-color: gray;
     border: 0;
 }
+
+.nav-wrapper {
+    background-color: gray;
+    padding-left: 15%;
+    padding-right: 15%;
+}

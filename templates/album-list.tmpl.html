@@ -4,7 +4,7 @@
         <ul id="albums">
             {{#albums}}
                 <li class="album">
-                    <a href="/album/{{name}}">{{name}}</a>
+                    <a href="/album/{{album_name}}">{{album_name}}</a>
                 </li>
             {{/albums}}
         </ul>
@@ -12,4 +12,26 @@
     {{^albums}}
         No albums
     {{/albums}}
+</div>
+<div>
+    <a id="show-album-create" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+</div>
+<div id="create-album-modal" class="modal">
+    <div class="modal-content">
+        <h5>Create album</h5>
+        <form id="create-album-form">
+            <div class="input-field col s6">
+                <input id="album_name" name="album_name" type="text" class="validate" required>
+                <label for="album_name">Album name</label>
+            </div>
+            <div class="input-field col s12">
+                <textarea id="album_description" name="album_description" class="materialize-textarea"></textarea>
+                <label for="album_description">Album description</label>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-close btn-flat">Cancel</a>
+        <a id="create-album" class="modal-close waves-effect waves-red btn-flat">Create</a>
+    </div>
 </div>

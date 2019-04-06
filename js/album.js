@@ -1,11 +1,12 @@
 class AlbumView {
 
-    album = null;
+    name = null;
     tmpl = null;
+    album = null;
 
     constructor() {
         const pathParts = window.location.href.split('/');
-        this.album = pathParts[4];
+        this.name = pathParts[4];
 
         $.get('/templates/album.tmpl.html', (receivedTmpl) => {
             this.tmpl = receivedTmpl;
@@ -20,15 +21,17 @@ class AlbumView {
 
 
     refresh() {
-        $.getJSON('/api/album/' + this.album, (receivedData) => {
-            $.extend(this, receivedData);
+        $.getJSON('/api/album/' + this.name, (receivedData) => {
+            this.album = receivedData;
+
+            console.log(this.album);
 
             this.render();
         });
     }
 
     render() {
-        const renderedPage = Mustache.to_html(this.tmpl, this);
+        const renderedPage = Mustache.to_html(this.tmpl, this.album);
         $('.content').html(renderedPage);
         $('.modal').modal();
 
@@ -37,21 +40,19 @@ class AlbumView {
         });
         $('a#submit-image').click( function() {
             const album = $(this).data('album');
-            const formdata = new FormData();
-            const file = $(':file').prop('files')[0];
-            formdata.append('image', file);
+            const form = new FormData($('#image-upload-form')[0]);
             $.ajax({
                 url: `/api/album/${album}`,
                 type: 'post',
                 dataType: 'json',
-                data: formdata,
+                data: form,
                 enctype: 'multipart/form-data',
                 processData: false,
                 contentType: false,
                 success: function(data) {
                     albumView.refresh();
                 },
-                error(jqXHR, status, data) {
+                error: function(jqXHR, status, data) {
                     M.toast({html: `<p>Unable to add image: ${data}</p>`});
                 }
             });
@@ -80,6 +81,9 @@ class AlbumView {
             success: function(data) {
                 M.toast({html: undo});
                 albumView.refresh();
+            },
+            error: function(jqXHR, status, data) {
+                M.toast({html: `<p>Unable to delete image: ${data}</p>`});
             }
         });
     }
