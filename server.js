@@ -9,7 +9,7 @@ f = async function() {
         await mongoose.connect(config.db, {useNewUrlParser: true});
 
         app.listen(config.port, () => {
-            console.log(`Listening on: http://localhost:${config.port}`);
+            console.log(`Listening on: http://a.b.c.d:${config.port}`);
         });
     }
     catch(error) {

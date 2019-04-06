@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e24b8ad-dd4e-4d4a-b6d0-45c4dbd348da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/env/production.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/env/production.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -14,20 +16,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.6237762">
+    <splitter split-orientation="vertical" split-proportion="0.35944057">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.2225681">
+        <splitter split-orientation="horizontal" split-proportion="0.5869932">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/css/style.css">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="153">
-                      <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/config/env/development.js">
                   <provider selected="true" editor-type-id="text-editor">
@@ -37,11 +30,11 @@
                   </provider>
                 </entry>
               </file>
-              <file pinned="false" current-in-tab="true">
+              <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/index.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="136">
-                      <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+                    <state relative-caret-position="221">
+                      <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
                     </state>
                   </provider>
                 </entry>
@@ -49,8 +42,17 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/config/env/test.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="153">
-                      <caret line="9" selection-start-line="9" selection-end-line="9" />
+                    <state relative-caret-position="170">
+                      <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/config/env/production.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="34">
+                      <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
                     </state>
                   </provider>
                 </entry>
@@ -125,8 +127,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/package.json">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="119">
-                      <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+                    <state relative-caret-position="204">
+                      <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
                     </state>
                   </provider>
                 </entry>
@@ -211,11 +213,11 @@
         <splitter split-orientation="horizontal" split-proportion="0.86787975">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="false">
+              <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/server.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="17">
-                      <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+                    <state relative-caret-position="187">
+                      <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
                     </state>
                   </provider>
                 </entry>
@@ -247,7 +249,7 @@
                   </provider>
                 </entry>
               </file>
-              <file pinned="false" current-in-tab="true">
+              <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/templates/album.tmpl.html">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="82">
@@ -299,7 +301,7 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/server/models/photo.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="136">
+                    <state relative-caret-position="197">
                       <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
                     </state>
                   </provider>
@@ -361,7 +363,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/services/album/album.js" />
         <option value="$PROJECT_DIR$/src/services/album/index.js" />
         <option value="$PROJECT_DIR$/local.config.json" />
         <option value="$PROJECT_DIR$/data/db.js" />
@@ -382,7 +383,6 @@
         <option value="$PROJECT_DIR$/test/models/album-db-test.js" />
         <option value="$PROJECT_DIR$/server/models/album.js" />
         <option value="$PROJECT_DIR$/config/winston.js" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/server/models/util.js" />
         <option value="$PROJECT_DIR$/server/models/index.js" />
         <option value="$PROJECT_DIR$/test/models/album.spec.js" />
@@ -412,6 +412,8 @@
         <option value="$PROJECT_DIR$/js/register.js" />
         <option value="$PROJECT_DIR$/templates/album-undo-delete.tmpl.html" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/config/env/production.js" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -441,6 +443,17 @@
               <item name="photo-album" type="b2602c69:ProjectViewProjectNode" />
               <item name="photo-album" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="photo-album" type="b2602c69:ProjectViewProjectNode" />
+              <item name="photo-album" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="photo-album" type="b2602c69:ProjectViewProjectNode" />
+              <item name="photo-album" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="env" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -453,7 +466,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config/env" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -468,19 +481,19 @@
     <property name="ts.external.directory.path" value="C:\dev\photo-album\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\dev\photo-album\js" />
-      <recent name="C:\dev\photo-album\templates" />
-      <recent name="C:\dev\photo-album\test\models" />
-      <recent name="C:\dev\photo-album\config\env" />
-      <recent name="C:\dev\hello-world\src\app\album-list" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\dev\photo-album\test\controllers" />
       <recent name="C:\dev\photo-album\test\models" />
       <recent name="C:\dev\photo-album\test" />
       <recent name="C:\dev\photo-album\server\models" />
       <recent name="C:\dev\photo-album\server\routes" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\photo-album\config\env" />
+      <recent name="C:\dev\photo-album\js" />
+      <recent name="C:\dev\photo-album\templates" />
+      <recent name="C:\dev\photo-album\test\models" />
+      <recent name="C:\dev\hello-world\src\app\album-list" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -517,18 +530,18 @@
       <workItem from="1553653736888" duration="7077000" />
       <workItem from="1553740178917" duration="82928000" />
       <workItem from="1554051915557" duration="638000" />
-      <workItem from="1554508133544" duration="2423000" />
+      <workItem from="1554508133544" duration="3935000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196098000" />
+    <option name="totallyTimeSpent" value="197610000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="845" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7202797" visible="true" weight="0.20590208" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7202797" visible="true" weight="0.15425889" />
       <window_info id="Structure" order="1" sideWeight="0.27972028" side_tool="true" weight="0.28772637" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -554,7 +567,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main.ts" />
     <entry file="file://$PROJECT_DIR$/test/mocha.opts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -687,13 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/env/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/routes/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
@@ -778,13 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -836,7 +834,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/models/photo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="197">
           <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
         </state>
       </provider>
@@ -845,13 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/album.tmpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -876,17 +867,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="204">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        <state relative-caret-position="221">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/env/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/env/production.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/album.tmpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
         </state>
       </provider>
     </entry>
