@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start-dev": "NODE_ENV=development nodemon server.js",
-    "start": "NODE_ENV=production nodemon server.js",
+    "start": "NODE_ENV=production node server.js",
     "test": "NODE_ENV=test mocha --slow 750 --exit"
   },
   "engines": {
