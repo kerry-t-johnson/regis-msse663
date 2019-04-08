@@ -1,4 +1,4 @@
-const DbUser = require('../models/user');
+const DbUser = require('../models/UserModel');
 const router = require('express').Router();
 const LocalStrategy = require("passport-local/lib").Strategy;
 const logger = require('../../config/winston');
@@ -68,7 +68,6 @@ passport.serializeUser((user, cb) => {
 });
 
 passport.deserializeUser(async (id, cb) => {
-    console.log('@@@@@ deserializeUser: ', id);
     try {
         const user = await DbUser.findByDbId(id)
         cb(null, user);

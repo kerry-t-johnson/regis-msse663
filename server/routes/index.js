@@ -1,6 +1,6 @@
 const express = require('express');
-const albumRoutes = require('./album');
-const userRoutes = require('./user');
+const albumRoutes = require('./AlbumRoutes');
+const userRoutes = require('./UserRoutes');
 
 const router = express.Router();
 

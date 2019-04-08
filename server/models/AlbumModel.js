@@ -5,7 +5,7 @@ const uniqueValidator = require("mongoose-unique-validator");
 
 const AlbumSchema = new mongoose.Schema({
     album_name: {type: String, required: true, unique: true},
-    album_dir: {type: String, required: true},
+    user: {type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true},
     album_description: {type: String}
 });
 
@@ -13,7 +13,7 @@ AlbumSchema.plugin(uniqueValidator);
 
 AlbumSchema.statics.clearAll = () => {
     return new Promise(async (resolve, reject) => {
-        Album.deleteMany({}, (error) => {
+        AlbumModel.deleteMany({}, (error) => {
             if(error) {
                 reject(error);
             }
@@ -24,12 +24,12 @@ AlbumSchema.statics.clearAll = () => {
     });
 };
 
-AlbumSchema.statics.createAlbum = (album_name, album_dir = null, attrs = {}) => {
+AlbumSchema.statics.createAlbum = (user, album_name, attrs = {}) => {
     return new Promise(async (resolve, reject) => {
         try {
-            const album = await Album.create({
+            const album = await AlbumModel.create({
+                user: user,
                 album_name: album_name,
-                album_dir: album_dir || album_name,
                 album_description: attrs.album_description || ''
             });
             resolve(album);
@@ -43,7 +43,7 @@ AlbumSchema.statics.createAlbum = (album_name, album_dir = null, attrs = {}) => 
 AlbumSchema.statics.findByAlbumName = (album_name) => {
     return new Promise(async (resolve, reject) => {
         try {
-            const album = await Album.findOne({album_name: album_name});
+            const album = await AlbumModel.findOne({album_name: album_name});
             resolve(album);
         }
         catch(error) {
@@ -58,7 +58,7 @@ AlbumSchema.statics.allAlbums = (options = { sort_field: 'album_name', sort_asc:
         try {
             let sort = {};
             sort[sort_field] = sort_asc ? 1 : -1;
-            const query = Album.find()
+            const query = AlbumModel.find()
                 .sort(sort)
                 .skip(offset)
                 .limit(limit);
@@ -78,10 +78,6 @@ AlbumSchema.statics.allAlbums = (options = { sort_field: 'album_name', sort_asc:
     })
 };
 
-AlbumSchema.virtual('album_path').get(function() {
-    return path.join(config.album_root, this.album_dir);
-});
-
 mongoose.set('useCreateIndex', true);
-const Album = mongoose.model("Album", AlbumSchema);
-module.exports = Album;
+const AlbumModel = mongoose.model("Album", AlbumSchema);
+module.exports = AlbumModel;

@@ -20,7 +20,7 @@ UserSchema.methods.validatePassword = function(password) {
 
 UserSchema.statics.clearAll = () => {
     return new Promise(async (resolve, reject) => {
-        User.deleteMany({}, (error) => {
+        UserModel.deleteMany({}, (error) => {
             if(error) {
                 reject(error);
             }
@@ -34,7 +34,7 @@ UserSchema.statics.clearAll = () => {
 UserSchema.statics.createUser = function(email, password, options = {}) {
     return new Promise(async (resolve, reject) => {
         try {
-            const user = new User({email: email, first_name: options.first_name, last_name: options.last_name});
+            const user = new UserModel({email: email, first_name: options.first_name, last_name: options.last_name});
             user.password = password; // encrypts password
 
             await user.save();
@@ -49,7 +49,7 @@ UserSchema.statics.createUser = function(email, password, options = {}) {
 UserSchema.statics.findByDbId = function(id) {
     return new Promise(async (resolve, reject) => {
         try {
-            const user = await User.findById(id);
+            const user = await UserModel.findById(id);
             resolve(user);
         }
         catch(error) {
@@ -61,7 +61,7 @@ UserSchema.statics.findByDbId = function(id) {
 UserSchema.statics.findByUsername = function(username) {
     return new Promise(async (resolve, reject) => {
         try {
-            const user = await User.findOne({email: username});
+            const user = await UserModel.findOne({email: username});
             resolve(user);
         }
         catch(error) {
@@ -75,5 +75,5 @@ UserSchema.virtual("password").set(function(value) {
 });
 
 mongoose.set('useCreateIndex', true);
-const User = mongoose.model('User', UserSchema);
-module.exports = User;
+const UserModel = mongoose.model('User', UserSchema);
+module.exports = UserModel;

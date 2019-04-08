@@ -2,7 +2,10 @@
   <dictionary name="kerry">
     <words>
       <w>bcrypt</w>
+      <w>cloudinary</w>
+      <w>firstname</w>
       <w>ipsum</w>
+      <w>lastname</w>
       <w>lorem</w>
       <w>randomstring</w>
       <w>resave</w>

@@ -1,8 +1,7 @@
 const chai = require('chai');
 const expect = chai.expect;
-const config = require('../../config/env');
-const db = require('../../server/models/user');
-const mongoose = require('mongoose');
+const db = require('../../server/models/UserModel');
+const testUtils = require('../utils');
 chai.use(require('chai-as-promised'));
 
 describe('UserDb', () => {
@@ -11,8 +10,7 @@ describe('UserDb', () => {
     const test_password = 'password';
 
     beforeEach(async () => {
-        await mongoose.connect(config.db, {useNewUrlParser: true});
-        await db.clearAll();
+        await testUtils.beforeEach();
     });
 
     it('should be able to create a user', async () => {
@@ -25,6 +23,11 @@ describe('UserDb', () => {
         const user = await db.createUser(test_username, test_password);
 
         expect(() => user.validatePassword(test_password)).to.not.throw();
+    });
+
+    it("should be able to invalidate a user's password", async () => {
+        const user = await db.createUser(test_username, test_password);
+
         expect(() => user.validatePassword("foo")).to.throw('Invalid username or password');
     });
 
@@ -35,6 +38,8 @@ describe('UserDb', () => {
             }).catch(() => {
                 done();
             });
+        }).catch((error) => {
+            done(error);
         });
     });
 

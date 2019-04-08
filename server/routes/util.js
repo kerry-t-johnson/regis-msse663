@@ -4,8 +4,8 @@ module.exports.restrictToLoggedInUsers = (request, response, next) => {
     // console.log('_passport.instance: ', request._passport.instance);
     // console.log('user property: ', request._passport.instance._userProperty);
     // console.log('request[user property]: ', request['user']);
-    console.log('session: ', request.session);
-    console.log('user: ', request.user);
+    // console.log('session: ', request.session);
+    // console.log('user: ', request.user);
 
     if (request.isAuthenticated()) {
         next();

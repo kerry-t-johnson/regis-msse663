@@ -1,6 +1,7 @@
 const allDbs = [
-    require('./album'),
-    require('./photo')
+    require('./AlbumModel'),
+    require('./PhotoModel'),
+    require('./UserModel')
 ];
 
 module.exports.clearAll = () => {

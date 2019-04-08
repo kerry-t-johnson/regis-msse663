@@ -1,4 +1,3 @@
-const db = require('./server/models/album');
 const app = require('./config/express');
 const config = require('./config/env');
 const logger = require('./config/winston');
