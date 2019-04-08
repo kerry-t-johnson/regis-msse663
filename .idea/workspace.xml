@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e24b8ad-dd4e-4d4a-b6d0-45c4dbd348da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/controllers/AlbumController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/CloudinaryPhotoRepository.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/FileSystemPhotoRepository.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/PhotoController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/CloudinaryPhotoRepository.spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/FileSystemPhotoRepository.spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/routes/UserRoutes.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/kerry.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/kerry.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/env/development.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/env/development.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/env/production.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/env/production.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/env/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/env/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/album.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/album.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/AlbumModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/photo.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/PhotoModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/UserModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/album.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/AlbumRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/UserRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/album-test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/album.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/AlbumModel.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/photo.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/PhotoModel.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/user.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/UserModel.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/routes/album.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/routes/AlbumRoutes.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/express.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/express.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,9 +14,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.37762237">
+    <splitter split-orientation="vertical" split-proportion="0.62237763">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.54801327">
+        <splitter split-orientation="horizontal" split-proportion="0.34933776">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file pinned="false" current-in-tab="false">
@@ -59,7 +32,7 @@
                 <entry file="file://$PROJECT_DIR$/config/env/development.js">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="170">
-                      <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+                      <caret line="10" selection-start-line="10" selection-end-line="10" />
                     </state>
                   </provider>
                 </entry>
@@ -103,7 +76,7 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/server/controllers/AlbumController.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="114">
+                    <state relative-caret-position="130">
                       <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
                     </state>
                   </provider>
@@ -149,11 +122,20 @@
                   </provider>
                 </entry>
               </file>
-              <file pinned="false" current-in-tab="true">
+              <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/server/models/PhotoModel.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="200">
-                      <caret line="61" column="49" lean-forward="true" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+                    <state relative-caret-position="73">
+                      <caret line="56" selection-start-line="56" selection-end-line="56" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/config/express.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="249">
+                      <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
                     </state>
                   </provider>
                 </entry>
@@ -179,7 +161,7 @@
                 <entry file="file://$PROJECT_DIR$/test/routes/AlbumRoutes.spec.js">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="73">
-                      <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+                      <caret line="78" selection-start-line="78" selection-end-line="78" />
                     </state>
                   </provider>
                 </entry>
@@ -200,8 +182,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/server/controllers/PhotoController.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="277">
-                      <caret line="31" selection-start-line="31" selection-end-line="31" />
+                    <state relative-caret-position="107">
+                      <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
                     </state>
                   </provider>
                 </entry>
@@ -310,7 +292,6 @@
         <option value="$PROJECT_DIR$/templates/album-list.tmpl.html" />
         <option value="$PROJECT_DIR$/server/routes/user.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/config/express.js" />
         <option value="$PROJECT_DIR$/js/register.js" />
         <option value="$PROJECT_DIR$/templates/album-undo-delete.tmpl.html" />
         <option value="$PROJECT_DIR$/services.yaml" />
@@ -349,6 +330,7 @@
         <option value="$PROJECT_DIR$/server/controllers/FileSystemPhotoRepository.js" />
         <option value="$PROJECT_DIR$/server/models/PhotoModel.js" />
         <option value="$PROJECT_DIR$/server/controllers/PhotoController.js" />
+        <option value="$PROJECT_DIR$/config/express.js" />
       </list>
     </option>
   </component>
@@ -506,12 +488,12 @@
       <workItem from="1553740178917" duration="82928000" />
       <workItem from="1554051915557" duration="638000" />
       <workItem from="1554508133544" duration="11000000" />
-      <workItem from="1554640583576" duration="34986000" />
+      <workItem from="1554640583576" duration="35510000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239661000" />
+    <option name="totallyTimeSpent" value="240185000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="845" extended-state="6" />
@@ -618,13 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/express.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -842,7 +817,7 @@
     <entry file="file://$PROJECT_DIR$/config/env/development.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -855,7 +830,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/controllers/AlbumController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
+        <state relative-caret-position="130">
           <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
         </state>
       </provider>
@@ -867,24 +842,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/PhotoModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="61" column="49" lean-forward="true" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/routes/AlbumRoutes.spec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/controllers/PhotoController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="107">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/PhotoModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
         </state>
       </provider>
     </entry>

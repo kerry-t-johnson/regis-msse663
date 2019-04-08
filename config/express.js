@@ -27,7 +27,9 @@ app.use(bodyParser.json());
 app.use('/css', express.static('css'));
 app.use('/js', express.static('js'));
 app.use('/templates', express.static('templates'));
-app.use(config.album_root.replace('./', '/'), express.static(config.album_root));
+if(config.env !== 'production') {
+    app.use(config.album_root.replace('./', '/'), express.static(config.album_root));
+}
 app.use('/album', express.static('albums'));
 app.use('/api', require('../server/routes'));
 app.set('trust proxy', 1);
